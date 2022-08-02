@@ -1,5 +1,5 @@
 {
-  "name": "nestjs-redis",
+  "name": "nestjs-redis-connection",
   "version": "1.0.0",
   "description": "redis connection module baseed on node-redis && @nestjs/config",
   "scripts": {
@@ -10,7 +10,8 @@
   "keywords": [
     "node",
     "nestjs",
-    "loger"
+    "connection",
+    "client"
   ],
   "lint-staged": {
     "packages/*/{src, types}/**/*.{js,json,ts}": [
