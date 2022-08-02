@@ -1,0 +1,5 @@
+export const REDIS_CONFIG_OPTIONS = Symbol('REDIS_CONFIG_OPTIONS');
+export const REDIS_CONNECT_MAP = Symbol('REDIS_CONNECT_MAP');
+export const REDIS_CONFIG_KEY = Symbol('REDIS_CONFIG_KEY');
+export const REDIS_ERR_HANDLER = Symbol('REDIS_ERR_HANDLER');
+export const REDIS_CONFIG_KEY_STR = 'REDIS_CONFIG_KEY';

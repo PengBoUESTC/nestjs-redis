@@ -1,0 +1,51 @@
+{
+  "name": "nestjs-redis",
+  "version": "1.0.0",
+  "description": "redis connection module baseed on node-redis && @nestjs/config",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf -rf dist && tsc"
+  },
+  "main": "./dist/index.js",
+  "keywords": [
+    "node",
+    "nestjs",
+    "loger"
+  ],
+  "lint-staged": {
+    "packages/*/{src, types}/**/*.{js,json,ts}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "author": "pengboUESTC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PengBoUESTC/nestjs-redis.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PengBoUESTC/nestjs-redis/issues"
+  },
+  "homepage": "https://github.com/PengBoUESTC/nestjs-redis#readme",
+  "devDependencies": {
+    "@nestjs/common": "^9.0.7",
+    "@nestjs/config": "^2.2.0",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
+    "tslint": "^6.1.3",
+    "typescript": "^4.7.4",
+    "yorkie": "^2.0.0"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^9.0.7",
+    "@nestjs/config": "^2.2.0"
+  },
+  "dependencies": {
+    "redis": "^4.2.0"
+  }
+}
